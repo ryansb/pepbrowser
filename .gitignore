@@ -1,0 +1,5 @@
+*.egg-info
+distribute-*
+build
+dist
+*.pyc
