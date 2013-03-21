@@ -29,10 +29,9 @@ setup(
     zip_safe=False,
     install_requires=[
         "urwid"
-    ]
-    #TODO: Deal with entry_points
-    #entry_points="""
+    ],
+    entry_points="""
     #[console_scripts]
-    #pythong = pythong.util:parse_args
+    #pepbrowser = pepbrowser:show_gui
     #"""
 )
