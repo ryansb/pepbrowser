@@ -84,4 +84,3 @@ def page_pep(input_pep):
 def init_cache():
     if os.path.isdir(PEP_CACHE_DIR):
         os.mkdir(PEP_CACHE_DIR)
-

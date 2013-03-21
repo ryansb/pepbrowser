@@ -31,7 +31,7 @@ setup(
         "urwid"
     ],
     entry_points="""
-    #[console_scripts]
-    #pepbrowser = pepbrowser:show_gui
-    #"""
+    [console_scripts]
+    pepbrowser = pepbrowser:show_gui
+    """
 )
