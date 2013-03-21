@@ -9,7 +9,7 @@ from setuptools import setup, find_packages
 version = "0.1.0"
 
 setup(
-    name="",
+    name="pepbrowser",
     version=version,
     description="A command-line way to view PEPs while working in a terminal on- or off-line.",
     classifiers=[
