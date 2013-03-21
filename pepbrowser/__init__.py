@@ -17,8 +17,9 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-from pepbrowser.browser import PEPBrowser
+from pepbrowser.pep import get_pep_list
+from pepbrowser.browser import browser_main
 
 
 def show_gui():
-    PEPBrowser().main()
+    browser_main()
