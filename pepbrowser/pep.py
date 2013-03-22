@@ -44,13 +44,12 @@ def get_pep(pep):
 
 
 class PEPWidget(urwid.WidgetWrap):
-    def __init__(self, num, description):
+    def __init__(self, num, title):
         self.num = num
-        self.content = 'PEP %04d: %s...' % (num, description[:25])
         self.item = [
-            ('fixed', 15, urwid.Padding(urwid.AttrWrap(
+            ('fixed', 16, urwid.Padding(urwid.AttrWrap(
                 urwid.Text('PEP %04d' % self.num), 'body', 'focus'), left=2)),
-            urwid.AttrWrap(urwid.Text('%s' % description), 'body', 'focus'),
+            urwid.AttrWrap(urwid.Text('%s' % title), 'body', 'focus'),
         ]
         w = urwid.Columns(self.item)
         self.__super.__init__(w)
@@ -63,7 +62,7 @@ class PEPWidget(urwid.WidgetWrap):
 
 
 def get_pep_list():
-    return [PEPWidget(x, "Some PEP") for x in range(1, 50)]
+    return [PEPWidget(x, "This is a PEP") for x in range(1, 50)]
 
 
 if __name__ == "__main__":

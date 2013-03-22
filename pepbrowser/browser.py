@@ -63,10 +63,12 @@ def browser_main():
             raise urwid.ExitMainLoop()
         try:
             if key.lower() == 'j':
-                pep_widget_list.focus = pep_widget_list.get_next(pep_widget_list.focus)[1]
+                pep_widget_list.focus = pep_widget_list.get_next(
+                    pep_widget_list.focus)[1]
                 pep_widget_list._modified()
             if key.lower() == 'k':
-                pep_widget_list.focus = pep_widget_list.get_prev(pep_widget_list.focus)[1]
+                pep_widget_list.focus = pep_widget_list.get_prev(
+                    pep_widget_list.focus)[1]
                 pep_widget_list._modified()
         except IndexError:
             pass
